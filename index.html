@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Odin Project Form</title>
     <link rel="stylesheet" href="form.css">
+    
 </head>
 <body>
     
@@ -25,29 +26,29 @@
 
             <div class="theForm">
                 <p>Let's do this!</p>
-                <form action="" method="post">
+                <form action="results.html" id="myForm" method="get">
                     <div class="form-container">
                         <div class="left">
-                            <div><label for="">FIRST NAME</label></div>
-                            <div><input type="text"></div>
+                            <div><label >FIRST NAME</label></div>
+                            <div><input name="FN" type="text" required></div>
 
-                            <div><label for="">EMAIL</label></div>
-                            <div><input type="email"></div>
+                            <div><label >EMAIL</label></div>
+                            <div><input name="EM" type="email" required></div>
 
-                            <div><label for="">PASSWORD</label></div>
-                            <div><input type="password"></div>
+                            <div><label >PASSWORD</label></div>
+                            <div><input name="PassWord" id="pw" type="password" required></div>
                         </div>
                             
                         <div class="right">
                             <div class="left">
-                                <div><label for="">LAST NAME</label></div>
-                                <div><input type="text"></div>
+                                <div><label >LAST NAME</label></div>
+                                <div><input name="LN" type="text" required></div>
 
-                                <div><label for="">PHONE NUMBER</label></div>
-                                <div><input type="tel"></div>
+                                <div><label >PHONE NUMBER</label></div>
+                                <div><input name="PN" type="tel"></div>
 
-                                <div><label for="">CONFIRM PASSWORD</label></div>
-                                <div><input type="password"></div>
+                                <div><label id="pw-check-label" >CONFIRM PASSWORD</label></div>
+                                <div><input id="check-pw" name="PW2" type="password" required></div>
                             </div>
                         </div>
                     </div>
@@ -55,11 +56,12 @@
                 </form>
             </div>
             <div class="createAccount">
-                <button type="submit">Create Account</button>
+                <input class="submit-form" type="submit" value="Create Account" form="myForm">
                 <p>Already have an account? <a href="">Log in.</a>
             </div>
             
         </div>
       </div>
+      <script src="form.js"></script>
 </body>
 </html>

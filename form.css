@@ -80,7 +80,7 @@ body, html {
     z-index: 5;
     color: white;
     font-family: 'norse-bold';
-    font-size: 100px;
+    font-size: 10vh;
     justify-content: center;
     align-items: center;
     
@@ -114,6 +114,8 @@ body, html {
 
 input{
     width: 60%;
+    border-width: 1px;
+    border-color: #E5E7EB;
 }
 
 .blurb p {
@@ -123,6 +125,7 @@ input{
 
 .text-odin{
     margin-top: 45px;
+    word-wrap: break-word;
 }
 
 label{
@@ -140,3 +143,31 @@ label{
 .theForm label, input{
     margin-left: 6%;
 }
+
+.submit-form{
+    width: 32vh;
+    background-color: #596D48;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
+    color: white;
+    margin-left: 0;
+    padding: 10px;
+    
+}
+
+.createAccount p{
+    font-size: 23px;
+}
+input:focus{
+    outline: none;
+    border: 2px solid blue;
+}
+.error {
+
+    outline: none;
+    border: 2px solid red;
+  }
+
+ 
+
